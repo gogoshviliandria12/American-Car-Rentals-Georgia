@@ -1,0 +1,151 @@
+.cars-page{
+  background:#0f172a;
+  color:white;
+  min-height:100vh;
+}
+
+/* HERO */
+
+.cars-hero{
+  position:relative;
+  height:60vh;
+  background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+.cars-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.7);
+}
+
+.cars-hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.cars-hero-content h1{
+  font-size:72px;
+  color:#facc15;
+  margin-bottom:20px;
+}
+
+.cars-hero-content p{
+  max-width:700px;
+  color:#d1d5db;
+  line-height:1.8;
+  margin:auto;
+  font-size:18px;
+}
+
+/* SECTION */
+
+.cars-section{
+  padding:100px 8%;
+}
+
+.cars-title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.cars-title h2{
+  font-size:48px;
+  color:#facc15;
+}
+
+/* GRID */
+
+.cars-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+/* CARD */
+
+.car-card{
+  background:#1e293b;
+  border-radius:22px;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.car-card:hover{
+  transform:translateY(-10px);
+}
+
+.car-card img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+}
+
+.car-content{
+  padding:25px;
+}
+
+.car-content h3{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.car-price{
+  color:#facc15;
+  font-size:24px;
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.car-details{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  color:#cbd5e1;
+  margin-bottom:25px;
+}
+
+.rent-btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:50px;
+  background:#facc15;
+  color:#111827;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.rent-btn:hover{
+  background:#fde047;
+  transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .cars-hero-content h1{
+    font-size:44px;
+  }
+
+  .cars-hero-content p{
+    font-size:16px;
+  }
+
+  .cars-title h2{
+    font-size:36px;
+  }
+
+  .cars-section{
+    padding:80px 6%;
+  }
+}
