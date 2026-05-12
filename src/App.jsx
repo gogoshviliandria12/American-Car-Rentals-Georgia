@@ -11,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
 
       <Routes>
@@ -20,10 +20,10 @@ function App() {
         <Route path="/cars/:id" element={<CarDetails />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-
+    </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
+
   );
 }
 
