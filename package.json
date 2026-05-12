@@ -5,13 +5,11 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://gogoshviliandria12.github.io/American-Car-Rentals-Georgia",
+  
+"homepage": "https://gogoshviliandria12.github.io/American-Car-Rentals-Georgia",
 "scripts": {
   "dev": "vite",
   "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
 },
   "dependencies": {
